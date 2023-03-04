@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #1E1E1E;
+    color: #E3E3E3;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: #111111;
+    color: #E3E3E3;
+    width: 100%;
+    height: 10vh;
+    padding: 10px;
+  }
+  
+   .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .blog-post {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 1px solid white;
+  }
+  .blog-post .timeStamp {
+    display: inline-block;
+    justify-content: space-between;
+    opacity: 0.7;
+  }
+  .blog-post h2 {
+    margin-left: 20px;
+  }
+  .blog-post p {
+    margin-top: 20px;
+    display: block;
+    margin-left: 20px;
+  }
+  .blog-post button {
+    width: 10vw;
+    height: 5vh;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  #create-blog-btn {
+    background: #111111;
+    color: #E3E3E3;
+    border: 1px solid #E3E3E3;
+    padding: 10px 15px;
+  }
+
+  .Submit,.Edit {
+    display: block;
+    justify-content: space-around;
+    padding: 20px 0px;
+  }
+
+  .publish,.edit {
+    padding: 8px 30px;
+ }
+ 
+   #create-blog-form label {
+    display: block;
+    color: black;
+  }
+  #create-blog-form input {
+    width: 100%;
+    margin-top: 17px;
+    height: 6vh;
+    padding: 10px;
+  } 
+   #create-blog-form textarea {
+    width: 100%;
+    height: 30vh;
+    padding: 10px;
+    margin-top: 21px;
+  } 
+   #create-blog-form button {
+    width: auto;
+    height: auto;
+  } 
+  .cancel-post:hover {
+    cursor: pointer;
+  } 
+  
+  #edit-blog-form label {
+    display: block;
+    color: black;
+  }
+  #edit-blog-form input {
+    width: 100%;
+    margin-top: 17px;
+    height: 6vh;
+    padding: 10px;
+  }
+  #edit-blog-form textarea {
+    width: 100%;
+    height: 30vh;
+    padding: 10px;
+    margin-top: 21px;
+  }
+  .delete-post:hover {
+    cursor: pointer;
+  }
+  

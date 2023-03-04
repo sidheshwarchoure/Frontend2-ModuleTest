@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidheshwar Choure Module Test Frontend2 4 March 2023</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <span>Blogging Website</span>
+      <button id="create-blog-btn">Create a Blog</button>
+    </header>
+    <div id="blog-container"></div>
+    <div id="create-blog-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="create-blog-form">
+          <label for="title">Create A Post</label>
+          <input
+            placeholder="Enter your heading...."
+            type="text"
+            id="title"
+            name="title"
+          />
+          <!-- "description" -->
+          <textarea
+            placeholder="Enter Your Blog Post...."
+            id="description"
+            name="description"
+          ></textarea>
+          <div class="Submit">
+            <button type="submit" class="publish">Publish Post</button>
+            <button class="cancel-post publish">Cancel Post</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="edit-blog-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="edit-blog-form">
+          <label for="edit-title">Edit A Post</label>
+          <input type="text" id="edit-title" name="edit-title" />
+
+          <textarea id="edit-description" name="edit-description"></textarea>
+          <div class="Edit">
+            <button type="submit" class="edit">Save Post</button>
+            <button class="delete-post edit">Delete Post</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
